@@ -1,5 +1,5 @@
 ---
-title: "Coming Doon"
+title: "Coming Soon"
 description: "To be determined"
 date: "01/01/2025"
 demoURL: ""
