@@ -10,10 +10,10 @@ tags:
 
 ## Install astro-micro
 
-Clone the [Astro Micro repository](https://github.com/trevortylerlee/astro-micro.git).
+Clone the [Astro Micro repository](https://github.com/dimmy2k/dimas-xyz.git).
 
 ```sh
-git clone https://github.com/trevortylerlee/astro-micro.git my-astro-micro
+git clone https://github.com/dimmy2k/dimas-xyz.git my-astro-micro
 ```
 
 ```sh
@@ -42,7 +42,7 @@ To change the website metadata, edit `src/consts.ts`.
 export const SITE: Site = {
   NAME: "Astro Micro",
   DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
-  EMAIL: "trevortylerlee@gmail.com",
+  EMAIL: "dev@dimas.xyz",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
@@ -84,15 +84,15 @@ export const ABOUT: Metadata = {
 export const SOCIALS: Socials = [
   {
     NAME: "twitter-x",
-    HREF: "https://twitter.com/boogerbuttcheeks",
+    HREF: "https://twitter.com/username",
   },
   {
     NAME: "github",
-    HREF: "https://github.com/trevortylerlee",
+    HREF: "https://github.com/username",
   },
   {
     NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/trevortylerlee",
+    HREF: "https://www.linkedin.com/in/username",
   },
 ];
 ```
@@ -107,10 +107,10 @@ export const SOCIALS: Socials = [
 To set up RSS and Giscus, it's easier if the site is deployed and has a URL for you to use. Instantly deploy to Vercel or Netlify by clicking the buttons below.
 
 <div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/trevortylerlee/astro-micro">
+  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/dimmy2k/dimas-xyz">
     <img src="/deploy_vercel.svg" />
   </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/trevortylerlee/astro-micro">
+  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/dimmy2k/dimas-xyz">
     <img src="/deploy_netlify.svg" />
   </a>
 </div>
@@ -125,7 +125,7 @@ Change the `site` option to the deployed site's URL.
 // astro.config.mjs
 
 export default defineConfig({
-  site: "https://astro-micro.vercel.app",
+  site: "https://dimas.xyz",
   integrations: [tailwind(), sitemap(), mdx(), pagefind()],
   markdown: {
     shikiConfig: {
@@ -142,24 +142,24 @@ Follow the steps at [giscus.app](https://giscus.app). Once you get your custom G
 ```js
 // src/components/Giscus.astro
 
-<script
-  is:inline
-  src="https://giscus.app/client.js"
-  data-repo="trevortylerlee/astro-micro"
-  data-repo-id="R_kgDOL_6l9Q"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOL_6l9c4Cfk55"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="preferred_color_scheme"
-  data-lang="en"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async
-></script>
+<script is:inline
+        data-astro-rerun
+        src="https://giscus.app/client.js"
+        data-repo="dimmy2k/giscus"
+        data-repo-id="R_kgDOQTemUg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQTemUs4CxrHW"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 ```
 
 To change the Giscus themes used, edit the `setGiscusTheme` function in `Head.astro`.
