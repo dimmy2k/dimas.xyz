@@ -36,42 +36,6 @@ const projects: CollectionEntry<"projects">[] = (
                 It’s built with Astro and Tailwind, and hosted across Cloudflare, AWS, GCP, and Hetzner. Feel free to look around!
               </p>
             </span>
-            <span>
-              <pre id="traceData">Loading trace info...</pre>
-
-  <script>
-    async function fetchTrace() {
-      try {
-        const response = await fetch('/cdn-cgi/trace');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const text = await response.text();
-
-        // Parse key=value pairs into an object
-        const lines = text.trim().split('
-');
-        const data = {};
-        lines.forEach(line => {
-          const [key, value] = line.split('=');
-          data[key] = value;
-        });
-
-        // Format display for the page
-        let displayText = '';
-        for (const key in data) {
-          displayText += `${key}: ${data[key]}
-`;
-        }
-        document.getElementById('traceData').textContent = displayText;
-      } catch (error) {
-        document.getElementById('traceData').textContent = 'Failed to load trace info: ' + error.message;
-      }
-    }
-
-    fetchTrace();
-  </script>
-            </span>
           </article>
         </section>
 
