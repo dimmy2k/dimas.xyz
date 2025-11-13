@@ -13,7 +13,7 @@ tags:
 Clone the [Astro Micro repository](https://github.com/dimmy2k/dimas.xyz.git).
 
 ```sh
-git clone https://github.com/dimmy2k/dimas-xyz.git my-astro-micro
+git clone https://github.com/dimmy2k/dimas.xyz.git my-astro-micro
 ```
 
 ```sh
@@ -107,10 +107,10 @@ export const SOCIALS: Socials = [
 To set up RSS and Giscus, it's easier if the site is deployed and has a URL for you to use. Instantly deploy to Vercel or Netlify by clicking the buttons below.
 
 <div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/dimmy2k/dimas-xyz">
+  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/dimmy2k/dimas.xyz">
     <img src="/deploy_vercel.svg" />
   </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/dimmy2k/dimas-xyz">
+  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/dimmy2k/dimas.xyz">
     <img src="/deploy_netlify.svg" />
   </a>
 </div>
