@@ -10,7 +10,7 @@ tags:
 
 ## Install astro-micro
 
-Clone the [Astro Micro repository](https://github.com/dimmy2k/dimas-xyz.git).
+Clone the [Astro Micro repository](https://github.com/dimmy2k/dimas.xyz.git).
 
 ```sh
 git clone https://github.com/dimmy2k/dimas-xyz.git my-astro-micro
