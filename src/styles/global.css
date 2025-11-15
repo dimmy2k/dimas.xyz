@@ -149,33 +149,18 @@ pre {
 }
 
 .containerxyz {
-  --s: 150px; /* size of the logo */
-  --d: 8s; /* animation duration*/
-  --n: 4; /* number of visible logos */
+  --s: 150px; /* size of the images */
+  --d: 8s; /* animation duration */
+  --n: 4; /* number of visible images */
   
   display: flex;
   overflow: hidden;
 }
-
 imgxyz {
   width: var(--s);
-  offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s) + 10px)));
+  offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s))));
   animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());
 }
 @keyframes x { 
-  to {offset-distance: 100%}
-}
-
-
-/* extra styles */
-.containerxyz {
-  border: 1px solid;
-  padding-block: 5px;
-  margin: 20px auto;
-}
-:nth-child(2 of .container) img {
-  animation-direction: reverse;
-}
-bodyxyz {
-  background: #ffefd5;
+  to { offset-distance: 100%; }
 }
