@@ -147,20 +147,3 @@ pre {
 .copy-code:active {
   @apply scale-90 transition-transform;
 }
-
-.containerxyz {
-  --s: 150px; /* size of the images */
-  --d: 8s; /* animation duration */
-  --n: 4; /* number of visible images */
-  
-  display: flex;
-  overflow: hidden;
-}
-imgxyz {
-  width: var(--s);
-  offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s))));
-  animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());
-}
-@keyframes x { 
-  to { offset-distance: 100%; }
-}
